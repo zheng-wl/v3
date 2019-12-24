@@ -24,6 +24,31 @@ const routes = [
     name: 'scss',
     component: Scss,
   },
+  {
+    path: '/ts',
+    name: 'ts',
+	  component: () => import(/* webpackChunkName: "about" */ '../views/Ts.vue'),
+  },
+  {
+    path:'/fun01',
+    name:'fun01',
+    component:() => import( '../views/fun01.vue')
+  },
+  {
+    path:'/fun02',
+    name:'fun02',
+    component:() => import( '../views/fun02.vue')
+  },
+  {
+    path:'/fun03',
+    name:'/fun03',
+    component:() => import( '../views/fun03.vue')
+  },
+  {
+    path:'/fun04',
+    name:'/fun04',
+    component:() => import( '../views/fun04/fun04.vue')
+  }
 ];
 
 const router = new VueRouter({
