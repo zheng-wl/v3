@@ -48,6 +48,11 @@ const routes = [
     path:'/fun04',
     name:'/fun04',
     component:() => import( '../views/fun04/fun04.vue')
+  },
+  {
+    path:'/funceshi',
+    name:'/funceshi',
+    component:() => import( '../views/ceshifun.vue')
   }
 ];
 

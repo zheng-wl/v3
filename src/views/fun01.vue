@@ -12,6 +12,12 @@
 
 <script lang="ts">
 import { ref , reactive , toRefs ,computed } from "@vue/composition-api";
+
+function abc(val:any){
+    let a = val;
+    return a+=10;
+}
+
 export default{
     setup(){
         const refCount= ref("1");
@@ -21,11 +27,13 @@ export default{
         }
 
         const counts =ref(0);
+        const computedCount1 = computed(()=>abc(counts.value))
         const computedCounts = computed(()=>counts.value +1);
         return{
             counts,
             computedCounts,
             refCount,
+            computedCount1,
             ...toRefs(state),
             add
         };
