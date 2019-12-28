@@ -8,16 +8,16 @@
         <div><button @click="add()"></button></div>
         <div>wat:{{wat}}</div>
         <div>wat1:{{wat1}}</div>
-        <div> <button @click="addWat()">wat</button> </div>
-        <div> <button @click="addWat1()">wat1</button> </div>
-         <div></div>
-        <div> <button @click="addwa()">wat1+wat</button> </div>
+        <div><button @click="addWat()">wat</button> </div>
+        <div><button @click="addWat1()">wat1</button> </div>
+        <div></div>
+        <div><button @click="addwa()">wat1+wat</button> </div>
         <div><button @click="print()">print</button></div>
 
     </div>
 </template>
 <script lang='ts'>
-import { ref , reactive ,toRefs ,computed,Ref ,watch} from "@vue/composition-api";
+import { ref , reactive ,toRefs ,computed,Ref ,watch,onMounted} from "@vue/composition-api";
 function abc(val:any){
     let a = val;
     return a+=10;
@@ -72,7 +72,11 @@ export default{
         //   console.log("watch执行")
         //   console.log(a+=10);
         // })
-    
+        console.log("初始化执行");
+        onMounted(()=>{
+            console.log("mounted 加载成功")
+        })
+
         let functionObj =  {add,addWat,addWat1,addwa,print}
 
         return {
@@ -96,5 +100,18 @@ export default{
 //constant
 //computed
 //watch
+
+// beforeCreate -> 使用setup()
+// created -> 使用 setup()
+// beforeMount -> onBeforeMount
+// mounted -> onMounted
+// beforeUpdate -> onBeforeUpdate
+// updated -> onUpdated
+// beforeDestroy -> onBeforeUnmount
+// destroyed -> onUnmounted
+// errorCaptured -> onErrorCaptured
+
+
+
 
 </script>

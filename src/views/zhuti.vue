@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<div> 主题刷新 https://www.jianshu.com/p/dc130509315f</div>
+		<div> 
+			主题刷新 https://www.jianshu.com/p/dc130509315f
+			http://www.teamsfy.com/html/r_0026737b6fe846fd944a492a010f2ba8.html
+			</div>
 		<div>
 			安装
 			<br/>

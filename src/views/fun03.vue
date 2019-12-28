@@ -31,11 +31,13 @@ export default createComponent({
     }
 })
 
+
 //1. onMounted
 //2. createComponent 方便使用类型推断
 //3. :Ref<number>
 //4. watch
 //5. computed
+
 </script>
 
 <style lang="scss">
