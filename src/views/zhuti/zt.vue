@@ -12,7 +12,7 @@
     </div>
 
 </template>
-<script >
+<script lang='ts'>
 
 // let a = document.getElementById("aa").setAttribute('data-theme', 'green');
 
@@ -24,6 +24,15 @@ export default {
             console.log()
             document.getElementById("aas").setAttribute('data-theme', 'blue');
             console.log("1234")
+
+            let arr = [1,2,3,5,8,9];
+            as:for(let item of arr){
+                if(item == 5){
+                    break as;
+                }
+                console.log(item)
+            }
+
         })
         return {
             a1
