@@ -58,7 +58,14 @@ const routes = [
     path:'/funceshi',
     name:'/funceshi',
     component:() => import( '../views/ceshifun.vue')
+  },
+  {
+    path:'/login',
+    name:'/login',
+    component:() => import( '../views/login/index.vue')
   }
+
+
 ];
 
 const router = new VueRouter({

@@ -21,10 +21,9 @@ export default {
     setup(){
         let a1 = ref('print'); 
         onMounted(()=>{
-            console.log()
-            document.getElementById("aas").setAttribute('data-theme', 'blue');
+            console.log();
+            // document.getElementById("aas").setAttribute('data-theme', 'blue');
             console.log("1234")
-
             let arr = [1,2,3,5,8,9];
             as:for(let item of arr){
                 if(item == 5){
@@ -44,11 +43,14 @@ export default {
 </script>
 
 <style lang="scss">
+
+
     @import '../../assets/zhuti';
     @include base-background();
    
     .price{
         @include color_primary($color-primary);
-    }
+    } 
+
 
 </style>
